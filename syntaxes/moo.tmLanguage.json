@@ -17,14 +17,24 @@
 			"patterns": [
 				{
 					"name": "keyword.control.moo",
-					"match": "\\b(if|while|for|return|endif|endwhile|endfor|else|elseif)\\b"
+					"match": "\\b(if|while|for|return|endif|endwhile|endfor|else|elseif|in|this)\\b"
 				},
 				{
 					"name": "keyword.other",
-					"match": "\\b(typeof|toint|tofloat|toobj)\\b"
+					"match": "\\b(typeof|toint|tofloat|toobj|tostr)\\b"
 				},
-				{"name":"markup.heading",
-				"match":"@(program)\\b"}
+				{
+					"name": "constant.numeric",
+					"match": "\\b(INT|NUM|FLOAT|LIST|MAP|STR|ANON|OBJ|ERR)\\b"
+				},
+				{
+					"name": "markup.heading",
+					"match": "@(program)\\b"
+				},
+				{
+					"name": "constant.regexp",
+					"match": "\\$\\w*\\b"
+				}
 			]
 		},
 		"strings": {
@@ -49,7 +59,6 @@
 				}
 			]
 		}
-
 	},
 	"scopeName": "source.moo"
 }
