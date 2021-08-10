@@ -1,0 +1,55 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Moocode",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#lists"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [
+				{
+					"name": "keyword.control.moo",
+					"match": "\\b(if|while|for|return|endif|endwhile|endfor|else|elseif)\\b"
+				},
+				{
+					"name": "keyword.other",
+					"match": "\\b(typeof|toint|tofloat|toobj)\\b"
+				},
+				{"name":"markup.heading",
+				"match":"@(program)\\b"}
+			]
+		},
+		"strings": {
+			"name": "string.quoted.double.moo",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.moo",
+					"match": "\\\\."
+				}
+			]
+		},
+		"lists": {
+			"name": "variable.css",
+			"begin": "{|\\[",
+			"end": "}|\\]",
+			"patterns": [
+				{
+					"name": "constant.character.escape.moo",
+					"match": "\\\\."
+				}
+			]
+		}
+
+	},
+	"scopeName": "source.moo"
+}

@@ -1,0 +1,27 @@
+{
+    "name": "moocode",
+    "displayName": "moocode",
+    "description": "LamdaMoo+stunt Moocode",
+    "publisher": "MithrilSoftware",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.59.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "moo",
+            "aliases": ["Moocode", "moo"],
+            "extensions": [".moo"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "moo",
+            "scopeName": "source.moo",
+            "path": "./syntaxes/moo.tmLanguage.json"
+        }]
+    }
+    
+}
