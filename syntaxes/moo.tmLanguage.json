@@ -17,11 +17,11 @@
 			"patterns": [
 				{
 					"name": "keyword.control.moo",
-					"match": "\\b(if|while|for|return|endif|endwhile|endfor|else|elseif|in|this)\\b"
+					"match": "\\b(if|while|for|return|endif|endwhile|endfor|else|elseif|in|this|try|except|finally|endtry)\\b"
 				},
 				{
 					"name": "keyword.other",
-					"match": "\\b(typeof|toint|tofloat|toobj|tostr)\\b"
+					"match": "\\b(typeof|toint|tofloat|toobj|tostr|raise)\\b"
 				},
 				{
 					"name": "constant.numeric",
@@ -29,11 +29,19 @@
 				},
 				{
 					"name": "markup.heading",
-					"match": "@(program)\\b"
+					"match": "@(program|args|verb)\\b"
+				},
+				{
+					"name": "markup.heading.moo",
+					"match": "\\.\\w*\\b"
 				},
 				{
 					"name": "constant.regexp",
 					"match": "\\$\\w*\\b"
+				},
+				{
+					"name": "string.regexp",
+					"match": ":\\w*\\b"
 				}
 			]
 		},
