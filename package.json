@@ -1,9 +1,9 @@
 {
     "name": "moocode",
     "displayName": "moocode",
-    "description": "LamdaMoo+stunt Moocode",
+    "description": "LambdaMoo+stunt Moocode",
     "publisher": "MithrilSoftware",
-    "version": "0.0.5",
+    "version": "0.0.6",
     "engines": {
         "vscode": "^1.59.0"
     },
