@@ -7,9 +7,6 @@
 		},
 		{
 			"include": "#strings"
-		},
-		{
-			"include": "#lists"
 		}
 	],
 	"repository": {
@@ -42,24 +39,25 @@
 				{
 					"name": "string.regexp",
 					"match": ":\\w*\\b"
+				},
+				{
+					"name" : "variable.css.moo",
+					"match": "(\\[|\\]|{|})" 
+
+				},
+
+				{
+					"name" : "constant.numeric.moo",
+					"match": "\\b(?:\\d+(?:\\.\\d*)?|\\.\\d+)" 
+
 				}
+
 			]
 		},
 		"strings": {
 			"name": "string.quoted.double.moo",
 			"begin": "\"",
 			"end": "\"",
-			"patterns": [
-				{
-					"name": "constant.character.escape.moo",
-					"match": "\\\\."
-				}
-			]
-		},
-		"lists": {
-			"name": "variable.css",
-			"begin": "{|\\[",
-			"end": "}|\\]",
 			"patterns": [
 				{
 					"name": "constant.character.escape.moo",

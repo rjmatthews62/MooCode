@@ -17,7 +17,10 @@ This should work for most varieties of MOO, but is particulaly geared towards th
 Colours have been picked more or less at random based on what was supported by the default Dark theme in Visual Studio Code, but should work OK with most themes.
 
 ## Release Notes
-Fixed spelling of Lambda
+Removed lists as they weren't working properly, tweaked numbers and map/list highlighting.
+
+## [0.0.6]
+- Fixed spelling of Lambda
 
 ## 0.0.5
 Bumped version no for release
